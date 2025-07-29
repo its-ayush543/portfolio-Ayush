@@ -1,7 +1,4 @@
 import interviewImg from "@/assets/interviewEdge.jpg";
-import libraryImg from "@/assets/library.png";
-import skygazeImg from "@/assets/skygaze.png";
-import todoImg from "@/assets/todo.png";
 
 import { StaticImageData } from "next/image";
 import { cache } from "react";
@@ -13,7 +10,7 @@ export interface IProjectData {
   DESCRIPTION: string[];
   NOTE?: string;
   TECH_STACK: string[];
-  IMAGE: StaticImageData;
+  IMAGE: StaticImageData | null;
   HIDDEN: boolean;
 }
 
@@ -119,7 +116,7 @@ export const DATA = {
         "XGBoost",
         "Streamlit",
       ],
-      IMAGE: "",
+      IMAGE: null,
       HIDDEN: false,
       GITHUB: "https://github.com/its-ayush543/Calories-Burnt-Prediction",
     },

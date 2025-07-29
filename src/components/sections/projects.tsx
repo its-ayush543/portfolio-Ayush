@@ -11,7 +11,7 @@ interface IProjectData {
   DESCRIPTION: string[];
   NOTE?: string;
   TECH_STACK: string[];
-  IMAGE: StaticImageData;
+  IMAGE: StaticImageData | null;
 }
 
 export function Projects({

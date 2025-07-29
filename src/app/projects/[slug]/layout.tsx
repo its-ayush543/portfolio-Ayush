@@ -27,14 +27,16 @@ export async function generateMetadata({
     openGraph: {
       title: project[0],
       description: project[1].DESCRIPTION[0],
-      images: [
-        {
-          url: project[1].IMAGE.src,
-          width: 1200,
-          height: 630,
-          alt: project[0],
-        },
-      ],
+      images: project[1].IMAGE
+        ? [
+            {
+              url: project[1].IMAGE.src,
+              width: 1200,
+              height: 630,
+              alt: project[0],
+            },
+          ]
+        : [],
     },
   };
 }
