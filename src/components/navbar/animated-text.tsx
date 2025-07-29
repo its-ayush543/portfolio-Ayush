@@ -1,6 +1,5 @@
-'use client';
-import { motion } from "framer-motion";
-import type React from "react";
+"use client";
+import * as React from "react";
 
 const DURATION = 0.25;
 const STAGGER = 0.025;
@@ -14,56 +13,46 @@ export const AnimatedText: React.FC<AnimatedTextProps> = ({
   children,
   href,
 }) => {
+  const [isHovered, setIsHovered] = React.useState(false);
+
   return (
-    <motion.a
-      initial="initial"
-      whileHover="hovered"
+    <a
       href={href}
       className="relative block w-fit leading-[1.2rem] rounded-lg p-0 text-base text-primary/90 whitespace-nowrap sm:px-2 sm:py-1"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
-      <motion.div
-        className="absolute bottom-0 left-0 right-0 h-px bg-accent"
-        variants={{
-          initial: { width: "0%" },
-          hovered: { width: "100%" },
+      <div
+        className="absolute bottom-0 left-0 right-0 h-px bg-accent transition-all duration-300 ease-in-out"
+        style={{
+          width: isHovered ? "100%" : "0%",
         }}
-        transition={{ duration: DURATION, ease: "easeInOut" }}
       />
 
       <span className="relative inline-block cursor-pointer">
         {children.split("").map((l, i) => (
           <span key={i} className="relative inline-block overflow-hidden">
-            <motion.span
-              variants={{
-                initial: { y: 0 },
-                hovered: { y: "-100%" },
+            <span
+              className="block transition-transform duration-300 ease-in-out"
+              style={{
+                transform: isHovered ? "translateY(-100%)" : "translateY(0%)",
+                transitionDelay: `${i * STAGGER}s`,
               }}
-              transition={{
-                duration: DURATION,
-                ease: "easeInOut",
-                delay: i * STAGGER,
-              }}
-              className="block"
             >
               {l}
-            </motion.span>
-            <motion.span
-              variants={{
-                initial: { y: "100%" },
-                hovered: { y: "0%" },
+            </span>
+            <span
+              className="block absolute left-0 top-0 transition-transform duration-300 ease-in-out"
+              style={{
+                transform: isHovered ? "translateY(0%)" : "translateY(100%)",
+                transitionDelay: `${i * STAGGER}s`,
               }}
-              transition={{
-                duration: DURATION,
-                ease: "easeInOut",
-                delay: i * STAGGER,
-              }}
-              className="block absolute left-0 top-0"
             >
               {l}
-            </motion.span>
+            </span>
           </span>
         ))}
       </span>
-    </motion.a>
+    </a>
   );
 };
