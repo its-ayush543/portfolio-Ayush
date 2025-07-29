@@ -30,9 +30,9 @@ export const DATA = {
 
   ABOUT_ME: {
     INTRO:
-      "Hey! I'm a full-stack developer who loves building efficient, scalable, and intuitive applications. I thrive on solving complex problems, optimizing performance, and creating seamless user experiences.",
+      "I’m a passionate and detail-oriented developer with experience in building web applications and machine learning models. I enjoy solving real-world problems through code and I'm always eager to learn new technologies and take on challenging problems that push me to grow.",
     EXPERTISE:
-      "My expertise lies in Next.js, TypeScript, Node.js and I enjoy working across the stack to bring ideas to life.",
+      "My expertise lies in Next.js, TypeScript, Machine Learning, Data Science and I enjoy working across the stack to bring ideas to life.",
     BLOG: "I would love publishing blogs and sharing insights on web development, best practices, and new technologies.",
   },
 
@@ -57,9 +57,28 @@ export const DATA = {
         "Pandas",
         "Matplotlib",
         "FaceNet",
-        "Google Colab",
       ],
     },
+    "Priyadarshi Apparels":{
+      WEBSITE: "https://shopruecollection.com/",
+      POSITION: "Frontend Developer",
+      LOCATION: "Gurugram, India",
+      DURATION: "July, 2024 - Aug, 2024",
+      DESCRIPTION: [
+        "Built responsive user interfaces and optimized design across browsers.",
+        "Gained hands-on experience in JavaScript, React.js, and Next.js.",
+        "Focused on performance tuning, debugging, and enhancing user experience.",
+      ],
+
+      TECH_STACK: [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "ReactJS",
+        "NextJS",
+        "Tailwind CSS",
+      ],
+    }
   },
 
   PROJECTS: {
@@ -81,6 +100,26 @@ export const DATA = {
       IMAGE: interviewImg,
       HIDDEN: true,
       GITHUB:"https://github.com/its-ayush543/InterviewEdge-v2"
+    },
+    "Calories Burnt Prediction": {
+      SLUG: "calories-burnt-prediction",
+      LIVE_PREVIEW: "",
+      DESCRIPTION: [
+        "Developed a predictive model using the XGBoost algorithm to estimate calories burnt based on user activity data.",
+        "Performed data preprocessing and feature engineering to enhance model performance.",
+        "Utilized Google Colab for model development, experimentation, and evaluation."
+      ],
+      TECH_STACK: [
+        "Machine Learning",
+        "Data Science",
+        "Python",
+        "XGBoost",
+        "Streamlit",
+        ,
+      ],
+      IMAGE: interviewImg,
+      HIDDEN: true,
+      GITHUB:"https://github.com/its-ayush543/Calories-Burnt-Prediction"
     },
   },
 
