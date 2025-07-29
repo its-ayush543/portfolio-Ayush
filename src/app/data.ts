@@ -1,4 +1,7 @@
 import interviewImg from "@/assets/interviewEdge.jpg";
+import libraryImg from "@/assets/library.png";
+import skygazeImg from "@/assets/skygaze.png";
+import todoImg from "@/assets/todo.png";
 
 import { StaticImageData } from "next/image";
 import { cache } from "react";
@@ -59,7 +62,7 @@ export const DATA = {
         "FaceNet",
       ],
     },
-    "Priyadarshi Apparels":{
+    "Priyadarshi Apparels": {
       WEBSITE: "https://shopruecollection.com/",
       POSITION: "Frontend Developer",
       LOCATION: "Gurugram, India",
@@ -78,7 +81,7 @@ export const DATA = {
         "NextJS",
         "Tailwind CSS",
       ],
-    }
+    },
   },
 
   PROJECTS: {
@@ -98,8 +101,8 @@ export const DATA = {
         "VAPI",
       ],
       IMAGE: interviewImg,
-      HIDDEN: true,
-      GITHUB:"https://github.com/its-ayush543/InterviewEdge-v2"
+      HIDDEN: false,
+      GITHUB: "https://github.com/its-ayush543/InterviewEdge-v2",
     },
     "Calories Burnt Prediction": {
       SLUG: "calories-burnt-prediction",
@@ -107,7 +110,7 @@ export const DATA = {
       DESCRIPTION: [
         "Developed a predictive model using the XGBoost algorithm to estimate calories burnt based on user activity data.",
         "Performed data preprocessing and feature engineering to enhance model performance.",
-        "Utilized Google Colab for model development, experimentation, and evaluation."
+        "Utilized Google Colab for model development, experimentation, and evaluation.",
       ],
       TECH_STACK: [
         "Machine Learning",
@@ -115,16 +118,14 @@ export const DATA = {
         "Python",
         "XGBoost",
         "Streamlit",
-        ,
       ],
-      IMAGE: interviewImg,
-      HIDDEN: true,
-      GITHUB:"https://github.com/its-ayush543/Calories-Burnt-Prediction"
+      IMAGE: "",
+      HIDDEN: false,
+      GITHUB: "https://github.com/its-ayush543/Calories-Burnt-Prediction",
     },
   },
 
   ALL_PROJECTS: "https://github.com/its-ayush543?tab=repositories",
-
 
   SKILLS: {
     Languages: ["JavaScript", "TypeScript", "HTML", "CSS", "Node.js"],
@@ -136,13 +137,7 @@ export const DATA = {
       "Styled Components",
       "Material UI",
     ],
-    "Database & Backend": [
-      "MongoDB",
-      "Firebase",
-      "JWT",
-      "Supabase",
-      "Clerk",
-    ],
+    "Database & Backend": ["MongoDB", "Firebase", "JWT", "Supabase", "Clerk"],
     "Cloud & Deployment": ["Google Cloud Platform (GCP)", "Vercel"],
     "Tools & Platforms": [
       "Git",

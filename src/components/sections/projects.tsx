@@ -1,4 +1,9 @@
+"use client";
+
 import { ArrowUpRight } from "lucide-react";
+import { useState } from "react";
+import { ProjectModal } from "@/components/ui/project-modal";
+import { StaticImageData } from "next/image";
 
 interface IProjectData {
   LIVE_PREVIEW?: string;
@@ -6,6 +11,7 @@ interface IProjectData {
   DESCRIPTION: string[];
   NOTE?: string;
   TECH_STACK: string[];
+  IMAGE: StaticImageData;
 }
 
 export function Projects({
@@ -15,13 +21,50 @@ export function Projects({
   data: Record<string, IProjectData>;
   all: string;
 }) {
+  const [hoveredProject, setHoveredProject] = useState<{
+    name: string;
+    image: StaticImageData;
+  } | null>(null);
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseEnter = (
+    projectName: string,
+    projectData: IProjectData,
+    event: React.MouseEvent
+  ) => {
+    // Only show modal if project has a valid image
+    if (projectData.IMAGE && projectData.IMAGE.src) {
+      setHoveredProject({
+        name: projectName,
+        image: projectData.IMAGE,
+      });
+      setMousePosition({ x: event.clientX, y: event.clientY });
+    }
+  };
+
+  const handleMouseMove = (event: React.MouseEvent) => {
+    if (hoveredProject) {
+      setMousePosition({ x: event.clientX, y: event.clientY });
+    }
+  };
+
+  const handleMouseLeave = () => {
+    setHoveredProject(null);
+  };
+
   return (
     <div id="projects" className="py-10">
       <h2 className="font-medium text-primary/90 text-base">projects.</h2>
 
       <ul className="flex flex-col gap-12 mt-4 font-normal text-primary/90 text-base">
         {Object.entries(data).map(([key, value]) => (
-          <li key={key} className="cursor-target">
+          <li
+            key={key}
+            className="cursor-target"
+            onMouseEnter={(e) => handleMouseEnter(key, value, e)}
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+          >
             <div className="pl-4 border-muted-foreground hover:border-primary border-l size-full transition-all duration-300">
               <div className="flex justify-between items-start">
                 <div>
@@ -81,6 +124,14 @@ export function Projects({
           View all projects
         </a>
       </div>
+
+      {/* Modal */}
+      <ProjectModal
+        isVisible={!!hoveredProject}
+        projectName={hoveredProject?.name || ""}
+        projectImage={hoveredProject?.image || ({} as StaticImageData)}
+        mousePosition={mousePosition}
+      />
     </div>
   );
 }
