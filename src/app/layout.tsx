@@ -15,6 +15,11 @@ export const metadata: Metadata = {
   title: "AyusH | Engineer",
   description:
     "Software developer specializing in Next.js, TypeScript and Node.js.",
+  icons: {
+    icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
+  },
   openGraph: {
     title: "AyusH | Engineer",
     description:
@@ -25,9 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
   },
-  authors: [
-    { name: "Ayush", url: "https://utkarsh-singhal.is-a.dev/" },
-  ],
+  authors: [{ name: "Ayush", url: "https://utkarsh-singhal.is-a.dev/" }],
   keywords: [
     "Ayush",
     "Software Developer",
