@@ -27,6 +27,7 @@ export const DATA = {
     EMAIL: "mailto:ayushlucky2003@gmail.com",
     GITHUB: "https://github.com/its-ayush543",
     LINKEDIN: "https://www.linkedin.com/in/sits-ayush543",
+    CODING_PROFILE:"https://codolio.com/profile/its-ayush543"
   },
 
   ABOUT_ME: {
