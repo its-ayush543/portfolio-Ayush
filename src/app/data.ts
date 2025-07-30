@@ -1,4 +1,5 @@
 import interviewImg from "@/assets/interviewEdge.jpg";
+import languifyImg from "@/assets/languify.png"
 
 import { StaticImageData } from "next/image";
 import { cache } from "react";
@@ -86,8 +87,10 @@ export const DATA = {
       SLUG: "Interview Edge",
       LIVE_PREVIEW: "https://interview-edge-v2.vercel.app/",
       DESCRIPTION: [
-        "Integrated the Razorpay payment gateway to enable secure and seamless transactions",
-        "Built a high-performance UI using Next.js and TypeScript, optimizing user experience and system efficiency.",
+        "Developed an AI-powered mock interview platform simulating real-time interviews across diverse job roles.",
+        "Integrated Gemini APIto deliver personalized, voice-interactive feedback.",
+        "Implemented VAPI's Voice AI text-to-speech for a realistic, conversational user experience.",
+        "Used Next.js, FireBase Authentication for high performance and efficient data handling."
       ],
       TECH_STACK: [
         "React.js",
@@ -100,6 +103,28 @@ export const DATA = {
       IMAGE: interviewImg,
       HIDDEN: false,
       GITHUB: "https://github.com/its-ayush543/InterviewEdge-v2",
+    },
+    "Languify": {
+      SLUG: "languify",
+      LIVE_PREVIEW: "https://languify-devx.vercel.app/",
+      DESCRIPTION: [
+        "Built a Duolingo-style language learning app with gamified lessons and interactive quizzes.",
+        "Integrated AI-driven personalized learning paths and multilingual content support.",
+        "Implemented daily quests and a global leaderboard to boost user engagement and retention.",
+        "Added secure Stripe-based payment system for subscription-based access.",
+      ],
+      TECH_STACK: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Stripe",
+        "PostgreSQL",
+        "Drizzle ORM",
+        "Clerk",
+      ],
+      IMAGE: languifyImg,
+      HIDDEN: false,
+      GITHUB: "https://github.com/its-ayush543/Languify",
     },
     "Calories Burnt Prediction": {
       SLUG: "calories-burnt-prediction",
