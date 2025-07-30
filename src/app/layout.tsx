@@ -19,16 +19,8 @@ export const metadata: Metadata = {
     title: "AyusH | Engineer",
     description:
       "Software developer specializing in Next.js, TypeScript, and Node.js. Experienced in building scalable, high-performance applications.",
-    url: "https://utkarsh-singhal.is-a.dev/",
+    url: "https://ayush-devx.vercel.app/",
     type: "website",
-    images: [
-      {
-        url: "https://utkarsh-singhal.is-a.dev/opengraph-image.png",
-        width: 1200,
-        height: 630,
-        alt: "AyusH | Engineer",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
