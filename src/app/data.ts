@@ -23,7 +23,7 @@ export const DATA = {
     HEADLINE:
       "Passionate about building high-performance and scalable web applications.",
     RESUME:
-      "https://drive.google.com/file/d/1mqLWy2FHw_rBH8UffDKDRXCsQ4IEXa4m/view?usp=sharing",
+      "https://drive.google.com/drive/folders/1jPZRwzArBVysI92Us3bSZ2JFD67JPROx?usp=sharing",
     EMAIL: "mailto:ayushlucky2003@gmail.com",
     GITHUB: "https://github.com/its-ayush543",
     LINKEDIN: "https://www.linkedin.com/in/sits-ayush543",
