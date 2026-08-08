@@ -18,7 +18,7 @@ export interface IProjectData {
 export const DATA = {
   HEADER: {
     NAME: "Ayush",
-    AGE: "22",
+    AGE: "23",
     PRONOUN: "he/him",
     HEADLINE:
       "Passionate about building high-performance and scalable web applications.",
@@ -39,6 +39,31 @@ export const DATA = {
   },
 
   EXPERIENCE: {
+    "FNZ India": {
+      WEBSITE: "https://www.fnz.com/",
+      POSITION: "Junior Analyst Tester",
+      LOCATION: "Gurugram, India",
+      DURATION: "Jan, 2026 - Present",
+      DESCRIPTION: [
+          "Joined FNZ India as an Intern Analyst Tester and was promoted to Junior Analyst Tester in July 2026.",
+          "Contributed to FNZ's wealth management technology solutions for Bank of Montreal (BMO), a leading North American financial institution and key FNZ client.",
+          "Worked on BMO's Payments and Onboarding workflows, analyzing requirements and validating end-to-end application functionality.",
+          "Performed functional, API, and database validation while analyzing user stories and managing defects using JIRA and Xray.",
+          "Collaborated with cross-functional teams to investigate issues, validate fixes, and support successful feature delivery.",
+          "Used Postman, Insomnia, SQL Server, and SSMS for API analysis, testing, and backend data validation."
+    ],
+
+      TECH_STACK: [
+        "JIRA",
+        "Xray",
+        "POSTMAN",
+        "Insomnia",
+        "SQL",
+        "SQL Server",
+        "API Testing",
+        "System Integration Testing"
+      ],
+    },
     "Defence Reasearch & Development Organisation": {
       WEBSITE: "https://drdo.gov.in/drdo/",
       POSITION: "Summer Intern",
