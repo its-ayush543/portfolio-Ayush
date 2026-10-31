@@ -18,9 +18,7 @@ export function Header({ data }: { data: Record<string, string> }) {
             {data.NAME}
           </h1>
           <h2 className="flex flex-col gap-0 font-normal text-primary/90 text-base">
-            <p>
-              {data.AGE}, {data.PRONOUN}
-            </p>
+            <p>{data.PRONOUN}</p>
             <p>{data.HEADLINE}</p>
           </h2>
         </div>
@@ -47,7 +45,7 @@ export function Header({ data }: { data: Record<string, string> }) {
             >
               <Github />
             </MovingElement>
-            
+
             <MovingElement
               change={() => handleChange(data.LINKEDIN)}
               ariaLabel="Linkedin"

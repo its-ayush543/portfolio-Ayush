@@ -18,25 +18,22 @@ export interface IProjectData {
 export const DATA = {
   HEADER: {
     NAME: "Ayush",
-    AGE: "23",
     PRONOUN: "he/him",
     HEADLINE:
-      "Junior Analyst with experience in financial technology, software development, and machine learning.",
-    RESUME:
-      "https://drive.google.com/drive/folders/1jPZRwzArBVysI92Us3bSZ2JFD67JPROx?usp=sharing",
+      "Junior Analyst focused on testing and validating fintech platforms, with full-stack development and machine learning experience.",
+    RESUME: "/Ayush_CV.pdf",
     EMAIL: "mailto:ayushlucky2003@gmail.com",
     GITHUB: "https://github.com/its-ayush543",
-    LINKEDIN: "https://www.linkedin.com/in/sits-ayush543",
+    LINKEDIN: "https://www.linkedin.com/in/its-ayush543",
     CODING_PROFILE: "https://codolio.com/profile/its-ayush543",
   },
 
   ABOUT_ME: {
     INTRO:
-      "I’m a Junior Analyst with experience spanning financial technology, software development, and machine learning. I enjoy solving real-world problems through technology and working across different stages of a product, from understanding requirements and validating systems to building applications and data-driven solutions.",
+      "I’m a Junior Analyst focused on testing and validating financial technology platforms. I enjoy working across different stages of a product, from understanding requirements and validating systems end to end to building applications and data-driven solutions that solve real-world problems.",
     EXPERTISE:
-      "My expertise lies in software development, system integration, API and database workflows, machine learning, and data science. I have hands-on experience with Next.js, React, TypeScript, Python, PyTorch, SQL, and modern development and testing tools.",
-    BLOG:
-      "I would love to publish blogs and share insights on software development, machine learning, system design, and emerging technologies.",
+      "My expertise lies in API and database testing, system integration, and test case management with JIRA and Xray, backed by hands-on development with Next.js, React, TypeScript, and Python, and machine learning with PyTorch. I’m building toward test automation.",
+    BLOG: "I would love to publish blogs and share insights on software development, machine learning, system design, and emerging technologies.",
   },
 
   EDUCATION: {
@@ -74,14 +71,14 @@ export const DATA = {
       LOCATION: "Gurugram, India",
       DURATION: "Jan, 2026 - Present",
       DESCRIPTION: [
-        "Joined FNZ India as an Intern Analyst and was promoted to Junior Analyst in July 2026.",
-        "Contributed to FNZ's wealth management technology solutions for Bank of Montreal (BMO), a leading North American financial institution and key FNZ client.",
-        "Worked on BMO's Payments and Onboarding workflows, analyzing requirements and validating end-to-end application functionality.",
-        "Collaborated with cross-functional teams to analyze user stories, identify issues, and support successful feature delivery using JIRA and Xray.",
-        "Utilized Postman, Insomnia, SQL Server, and SSMS for API analysis and backend data validation.",
+        "Joined FNZ India as an Intern Analyst and converted to full-time Junior Analyst in July 2026, supporting FNZ's wealth management technology platform for a leading North American bank client.",
+        "Validate end-to-end Payments and Onboarding workflows against business requirements and user stories, testing functional and system-integration scenarios.",
+        "Analyze APIs with Postman and Insomnia and verify backend data with SQL Server (SSMS) to confirm data integrity across systems.",
+        "Log and track issues and manage test cases in JIRA and Xray, working with developers, business analysts, and cross-functional teams to support successful feature delivery.",
       ],
 
       TECH_STACK: [
+        "Manual Testing",
         "JIRA",
         "Xray",
         "Postman",
@@ -117,32 +114,11 @@ export const DATA = {
         "Machine Learning",
       ],
     },
-
-    "Priyadarshi Apparels": {
-      WEBSITE: "https://shopruecollection.com/",
-      POSITION: "Frontend Developer",
-      LOCATION: "Gurugram, India",
-      DURATION: "Jul, 2024 - Aug, 2024",
-      DESCRIPTION: [
-        "Built responsive user interfaces and optimized designs across different browsers and screen sizes.",
-        "Worked with JavaScript, React.js, and Next.js to develop and enhance web application features.",
-        "Focused on performance optimization, debugging, and improving overall user experience.",
-      ],
-
-      TECH_STACK: [
-        "HTML",
-        "CSS",
-        "JavaScript",
-        "React.js",
-        "Next.js",
-        "Tailwind CSS",
-      ],
-    },
   },
 
   PROJECTS: {
     "Interview Edge": {
-      SLUG: "Interview Edge",
+      SLUG: "interview-edge",
       LIVE_PREVIEW: "https://interview-edge-v2.vercel.app/",
       DESCRIPTION: [
         "Developed an AI-powered mock interview platform that simulates real-time interviews across diverse job roles.",
@@ -214,12 +190,21 @@ export const DATA = {
   ALL_PROJECTS: "https://github.com/its-ayush543?tab=repositories",
 
   SKILLS: {
+    "API & Testing": [
+      "Manual Testing",
+      "API Testing",
+      "System Integration Testing",
+      "Postman",
+      "Insomnia",
+    ],
+
     Languages: [
       "JavaScript",
       "TypeScript",
       "Python",
       "Java",
       "C",
+      "C++",
       "SQL",
       "HTML",
       "CSS",
@@ -262,24 +247,9 @@ export const DATA = {
       "Drizzle ORM",
     ],
 
-    "API & Testing": [
-      "Postman",
-      "Insomnia",
-      "API Testing",
-      "System Integration Testing",
-    ],
+    "Project & Collaboration": ["JIRA", "Xray", "Git", "GitHub"],
 
-    "Project & Collaboration": [
-      "JIRA",
-      "Xray",
-      "Git",
-      "GitHub",
-    ],
-
-    "Cloud & Deployment": [
-      "Google Cloud Platform (GCP)",
-      "Vercel",
-    ],
+    "Cloud & Deployment": ["Google Cloud Platform (GCP)", "Vercel"],
 
     "Tools & Platforms": [
       "Visual Studio Code",
@@ -288,13 +258,7 @@ export const DATA = {
       "Google Colab",
     ],
 
-    "Package Managers & Build Tools": [
-      "NPM",
-      "PNPM",
-      "Yarn",
-      "Bun",
-      "Vite",
-    ],
+    "Package Managers & Build Tools": ["NPM", "PNPM", "Yarn", "Bun", "Vite"],
   },
 };
 

@@ -1,6 +1,8 @@
 # Portfolio
 
-[🔗 Live Preview](https://utkarsh-singhal.is-a.dev/)
+[🔗 Live Preview](https://ayush-devx.vercel.app/)
+
+> Based on the open-source portfolio template by [Utkarsh Singhal](https://github.com/Utkarsh-Singhal-26/portfolio).
 
 Welcome to my personal portfolio repository! This project showcases my work, skills, and experience through a modern, responsive, and dynamic web application built with Next.js and Tailwind CSS.
 
@@ -69,8 +71,8 @@ Welcome to my personal portfolio repository! This project showcases my work, ski
 1. Clone the repository:
 
    ```sh
-   git clone https://github.com/Utkarsh-Singhal-26/portfolio.git
-   cd portfolio
+   git clone https://github.com/its-ayush543/portfolio-Ayush.git
+   cd portfolio-Ayush
    ```
 
 2. Install dependencies:

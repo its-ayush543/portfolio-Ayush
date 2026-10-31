@@ -51,7 +51,7 @@ export function Contact({ data }: { data: Record<string, string> }) {
             <Linkedin className="w-5 h-5" />
           </Link>
           <Link
-            href="mailto:utkarsh@example.com"
+            href="#"
             className="text-gray-400 hover:text-white transition-colors"
             onClick={() => handleChange(data.EMAIL)}
           >
@@ -61,7 +61,7 @@ export function Contact({ data }: { data: Record<string, string> }) {
 
         <div className="pt-4 cursor-target">
           <p className="text-gray-400 text-sm">
-            Currently available for freelance work and full-time opportunities
+            Happy to talk about testing, software, and machine learning
           </p>
           <p className="mt-2 text-gray-500 text-xs">
             Response time: Usually within 24 hours

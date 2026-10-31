@@ -12,39 +12,38 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "AyusH | Engineer",
+  title: "Ayush | Junior Analyst & Developer",
   description:
-    "Software developer specializing in Next.js, TypeScript and Node.js.",
+    "Junior Analyst focused on API testing and system validation for fintech platforms, with full-stack (Next.js, TypeScript) and machine learning experience.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",
     apple: "/favicon.svg",
   },
   openGraph: {
-    title: "AyusH | Engineer",
+    title: "Ayush | Junior Analyst & Developer",
     description:
-      "Software developer specializing in Next.js, TypeScript, and Node.js. Experienced in building scalable, high-performance applications.",
+      "Junior Analyst focused on API testing and system validation for fintech platforms, with full-stack (Next.js, TypeScript) and machine learning experience.",
     url: "https://ayush-devx.vercel.app/",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
   },
-  authors: [{ name: "Ayush", url: "https://utkarsh-singhal.is-a.dev/" }],
+  authors: [{ name: "Ayush", url: "https://ayush-devx.vercel.app/" }],
   keywords: [
     "Ayush",
-    "Software Developer",
-    "Full-Stack Developer",
-    "Engineer",
+    "Junior Analyst",
+    "QA Analyst",
+    "Software Testing",
+    "API Testing",
+    "Postman",
+    "SQL",
+    "Fintech",
     "React",
     "Next.js",
     "TypeScript",
-    "Node.js",
-    "GCP",
-    "MongoDB",
-    "Firebase",
-    "Tailwind CSS",
-    "Web Development",
+    "Machine Learning",
   ],
   creator: "Ayush",
   publisher: "Ayush",
