@@ -20,7 +20,7 @@ export const DATA = {
     NAME: "Ayush",
     PRONOUN: "he/him",
     HEADLINE:
-      "Junior Analyst focused on testing and validating fintech platforms, with full-stack development and machine learning experience.",
+      "Junior Analyst working on fintech integrations (APIs, SQL, SIT and regression testing), with full-stack and machine learning experience, building toward SDET.",
     RESUME: "/Ayush_CV.pdf",
     EMAIL: "mailto:ayushlucky2003@gmail.com",
     GITHUB: "https://github.com/its-ayush543",
@@ -30,9 +30,9 @@ export const DATA = {
 
   ABOUT_ME: {
     INTRO:
-      "I’m a Junior Analyst focused on testing and validating financial technology platforms. I enjoy working across different stages of a product, from understanding requirements and validating systems end to end to building applications and data-driven solutions that solve real-world problems.",
+      "I work on financial integrations at FNZ, a wealth-management technology company, on a bank onboarding integration for a major Canadian client. I enjoy working across the stages of a product, from understanding requirements and validating systems end to end to building applications and data-driven solutions.",
     EXPERTISE:
-      "My expertise lies in API and database testing, system integration, and test case management with JIRA and Xray, backed by hands-on development with Next.js, React, TypeScript, and Python, and machine learning with PyTorch. I’m building toward test automation.",
+      "My work covers SIT and regression testing, 200+ test cases written or updated in JIRA and Xray, API testing with Postman, and SQL-based data validation, with 70+ defects raised. I also build with Next.js, React, TypeScript, and Python, and have worked on machine learning with PyTorch. I’m now building test automation skills with Java and Playwright.",
     BLOG: "I would love to publish blogs and share insights on software development, machine learning, system design, and emerging technologies.",
   },
 
@@ -69,26 +69,40 @@ export const DATA = {
       WEBSITE: "https://www.fnz.com/",
       POSITION: "Junior Analyst",
       LOCATION: "Gurugram, India",
-      DURATION: "Jan, 2026 - Present",
+      DURATION: "Jul, 2026 - Present",
       DESCRIPTION: [
-        "Joined FNZ India as an Intern Analyst and converted to full-time Junior Analyst in July 2026, supporting FNZ's wealth management technology platform for a leading North American bank client.",
-        "Validate end-to-end Payments and Onboarding workflows against business requirements and user stories, testing functional and system-integration scenarios.",
-        "Analyze APIs with Postman and Insomnia and verify backend data with SQL Server (SSMS) to confirm data integrity across systems.",
-        "Log and track issues and manage test cases in JIRA and Xray, working with developers, business analysts, and cross-functional teams to support successful feature delivery.",
+        "Moved from payments to onboarding workflows, and was recognized with a QA Quality Ninja appreciation for a smooth transition.",
+        "Test a bank onboarding integration and a GIC issuer integration through SIT and regression, writing or updating 200+ test cases in JIRA and Xray.",
+        "Raised 70+ defects, including post-release issues where data was not reaching the client, and escalated them before client impact.",
+        "Validate APIs with Postman and Insomnia and check backend data in SQL Server.",
+        "Join weekly client calls on defect triage and requirement reviews.",
+        "Building an overlay tool to capture test-execution evidence.",
       ],
 
       TECH_STACK: [
-        "Manual Testing",
+        "SIT",
+        "Regression Testing",
         "JIRA",
         "Xray",
         "Postman",
         "Insomnia",
-        "SQL",
         "SQL Server",
         "SSMS",
-        "API",
-        "System Integration",
       ],
+    },
+
+    "FNZ India (Intern)": {
+      WEBSITE: "https://www.fnz.com/",
+      POSITION: "Intern Analyst",
+      LOCATION: "Gurugram, India",
+      DURATION: "Jan, 2026 - Jul, 2026",
+      DESCRIPTION: [
+        "Worked on payments workflows for a bank client, covering EFT, RTCT, and bill payment methods.",
+        "Analyzed requirements and user stories, wrote test cases in JIRA and Xray, and validated end-to-end payment scenarios.",
+        "Used Postman and SQL Server to validate APIs and backend data.",
+      ],
+
+      TECH_STACK: ["JIRA", "Xray", "Postman", "SQL Server", "Payments"],
     },
 
     "Defence Research & Development Organisation": {
@@ -97,10 +111,10 @@ export const DATA = {
       LOCATION: "New Delhi, India",
       DURATION: "Jun, 2025 - Jul, 2025",
       DESCRIPTION: [
-        "Simulated a complete Model Extraction (ME) attack pipeline targeting Face Recognition models using FaceNet embeddings.",
-        "Trained and evaluated multiple surrogate models under varying query sizes, label noise, and model architectures.",
-        "Implemented accuracy and fidelity comparisons between target and surrogate models with visualizations.",
-        "Automated the attack simulation workflow to ensure reproducible results and scalable experimentation.",
+        "Simulated a black-box model extraction attack on a face-identification model built on FaceNet embeddings (62 identities, LFW dataset).",
+        "Trained 18 PyTorch surrogate models across query budgets (1,000 to 3,000), label-noise levels (0 to 20%), and two architectures.",
+        "Reached over 99% agreement with the target model using 3,000 queries, even with 20% label noise.",
+        "Visualized accuracy and fidelity trends and automated the experiment pipeline for reproducible runs.",
       ],
 
       TECH_STACK: [
@@ -111,12 +125,34 @@ export const DATA = {
         "Pandas",
         "Matplotlib",
         "FaceNet",
-        "Machine Learning",
+        "Adversarial ML",
       ],
     },
   },
 
   PROJECTS: {
+    "Model Extraction Attack": {
+      SLUG: "model-extraction-attack",
+      LIVE_PREVIEW: "",
+      DESCRIPTION: [
+        "Simulated a black-box model extraction attack on a face-identification model built on FaceNet embeddings (62 identities, LFW dataset).",
+        "Trained 18 PyTorch surrogate models across query budgets, label-noise levels, and architectures.",
+        "Surrogates matched the target on over 99% of predictions with 3,000 queries, even with 20% label noise.",
+        "Plotted accuracy and fidelity against query size and noise to show how the attack scales.",
+      ],
+      TECH_STACK: [
+        "Python",
+        "PyTorch",
+        "FaceNet",
+        "scikit-learn",
+        "Matplotlib",
+        "Adversarial ML",
+      ],
+      IMAGE: null,
+      HIDDEN: false,
+      GITHUB: "https://github.com/its-ayush543/ME-Extraction-ModeL",
+    },
+
     "Interview Edge": {
       SLUG: "interview-edge",
       LIVE_PREVIEW: "https://interview-edge-v2.vercel.app/",
@@ -144,7 +180,8 @@ export const DATA = {
       SLUG: "languify",
       LIVE_PREVIEW: "https://languify-devx.vercel.app/",
       DESCRIPTION: [
-        "Built a Duolingo-style language learning application with gamified lessons and interactive quizzes.",
+        "Built while following a tutorial, to learn payments (Stripe), authentication, and gamified learning flows in Next.js.",
+        "Duolingo-style language learning application with gamified lessons and interactive quizzes.",
         "Integrated AI-driven personalized learning paths and multilingual learning content.",
         "Implemented daily quests and a global leaderboard to improve user engagement and retention.",
         "Added a secure Stripe-based subscription payment system for premium access.",
@@ -208,6 +245,8 @@ export const DATA = {
       "Manual Testing",
       "API Testing",
       "System Integration Testing",
+      "Regression Testing",
+      "Test Case Design",
       "Postman",
       "Insomnia",
     ],
