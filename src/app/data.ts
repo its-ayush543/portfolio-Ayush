@@ -163,6 +163,20 @@ export const DATA = {
       GITHUB: "https://github.com/its-ayush543/Languify",
     },
 
+    "Sinha Studio": {
+      SLUG: "sinha-studio",
+      LIVE_PREVIEW: "https://sinhastudio.netlify.app/",
+      DESCRIPTION: [
+        "Built a responsive photography portfolio website to showcase professional work through dynamic album galleries.",
+        "Implemented smooth animations and streamlined navigation for a polished viewing experience.",
+        "Developed the interface with React, Next.js, TypeScript, and Tailwind CSS.",
+      ],
+      TECH_STACK: ["React.js", "Next.js", "TypeScript", "Tailwind CSS"],
+      IMAGE: null,
+      HIDDEN: false,
+      GITHUB: "https://github.com/its-ayush543/SinhaStudio",
+    },
+
     "Calories Burnt Prediction": {
       SLUG: "calories-burnt-prediction",
       LIVE_PREVIEW: "",
