@@ -2,7 +2,6 @@
 
 [🔗 Live Preview](https://ayush-devx.vercel.app/)
 
-> Based on the open-source portfolio template by [Utkarsh Singhal](https://github.com/Utkarsh-Singhal-26/portfolio).
 
 Welcome to my personal portfolio repository! This project showcases my work, skills, and experience through a modern, responsive, and dynamic web application built with Next.js and Tailwind CSS.
 
